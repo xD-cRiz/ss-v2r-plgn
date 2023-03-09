@@ -33,7 +33,7 @@ install_plugin()
 	 tar -xf v2ray-plugin-linux-amd64-v1.3.1.tar.gz
 	 cp v2ray-plugin_linux_amd64 /usr/bin/v2ray-plugin
   } &>/dev/null
-} clear
+}
   
 install_shadowsocks()
 {
@@ -45,7 +45,7 @@ install_shadowsocks()
 	 chmod +x shadowsocks-libev-debian.sh
 	./shadowsocks-libev-debian.sh
   } &>/dev/null
-} clear
+}
 
 
 install_config()
