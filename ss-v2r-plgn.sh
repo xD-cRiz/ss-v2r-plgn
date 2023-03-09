@@ -44,7 +44,6 @@ install_shadowsocks()
 
 install_config()
 {
- clear
   echo "Finalizing config..."
   {
 cat <<EOF >/etc/shadowsocks-libev/config.json
