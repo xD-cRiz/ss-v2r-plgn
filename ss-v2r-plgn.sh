@@ -32,7 +32,6 @@ install_plugin()
   
 install_shadowsocks()
 {
- clear
   echo "Installing shadowsocks-libev."
   {
 	 #Install Shadowsocks on Server
