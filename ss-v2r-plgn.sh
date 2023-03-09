@@ -5,7 +5,7 @@
 ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 
 PORT="8888"
-PASSWORD="cqkvpn"
+PASSWORD="criz.romero"
 METHOD="chacha20-ietf-poly1305"
 
     sudo apt update
@@ -13,13 +13,12 @@ METHOD="chacha20-ietf-poly1305"
 	apt install nginx -y
 
      #Download V2Ray Plugin to Server
-	 wget https://github.com/xD-cRiz/ss-v2r-plgn/blob/main/v2ray-plugin-linux-amd64-v1.3.1.tar.gz
+	 wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.1/v2ray-plugin-linux-amd64-v1.3.1.tar.gz
 	 tar -xf v2ray-plugin-linux-amd64-v1.3.1.tar.gz
 	 cp v2ray-plugin_linux_amd64 /usr/bin/v2ray-plugin
-  
 
 	 #Install Shadowsocks on Server
-	 wget https://raw.githubusercontent.com/xD-cRiz/ss-v2r-plgn/main/shadowsocks-libev-debian.sh
+	 wget https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev-debian.sh
 	 chmod +x shadowsocks-libev-debian.sh
 	./shadowsocks-libev-debian.sh
 
