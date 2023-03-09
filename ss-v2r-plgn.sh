@@ -66,7 +66,6 @@ EOF
 
 install_done()
 {
-  clear
   echo "Shadowsocks+V2ray Plugin"
   echo "IP : $(curl -s https://api.ipify.org)"
   echo "Port : $PORT"
