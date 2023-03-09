@@ -14,10 +14,6 @@ install_require()
   echo "Updating your system."
   {
     sudo apt update
-  } &>/dev/null
-  clear
-  echo "Installing dependencies."
-  {
 	apt install wget -y
 	apt install nginx -y
   } &>/dev/null
@@ -25,7 +21,6 @@ install_require()
 
 install_plugin()
 {
- clear
   echo "Installing V2ray Plugin."
   {
      #Download V2Ray Plugin to Server
