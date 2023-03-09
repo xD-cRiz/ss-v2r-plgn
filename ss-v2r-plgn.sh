@@ -63,7 +63,7 @@ EOF
   } &>/dev/null
 }
 
-install_done()
+install_done(){
 {
   echo "Shadowsocks+V2ray Plugin"
   echo "IP : $(curl -s https://api.ipify.org)"
