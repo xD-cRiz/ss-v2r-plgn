@@ -10,7 +10,6 @@ METHOD="chacha20-ietf-poly1305"
 
 install_require()
 {
-  clear
   echo "Updating your system."
   {
     sudo apt update
