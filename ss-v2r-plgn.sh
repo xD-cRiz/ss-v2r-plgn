@@ -63,8 +63,9 @@ EOF
   } &>/dev/null
 }
 
-install_done(){
+install_done()
 {
+clear
   echo "Shadowsocks+V2ray Plugin"
   echo "IP : $(curl -s https://api.ipify.org)"
   echo "Port : $PORT"
@@ -77,6 +78,7 @@ install_done(){
   echo "Server will secure this server and reboot after 20 seconds"
   sleep 20
   /sbin/reboot
+}
 }
 
 install_require
