@@ -88,8 +88,8 @@ install_done()
   /sbin/reboot
 }
 
-install_require()
-install_plugin()
-install_shadowsocks()
-install_config()
-install_done()
+install_require
+install_plugin
+install_shadowsocks
+install_config
+install_done
