@@ -63,7 +63,7 @@ cat <<EOF >/etc/shadowsocks-libev/config.json
 }
 EOF
   } &>/dev/null
-} clear
+}
 
 install_done()
 {
