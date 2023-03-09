@@ -13,10 +13,10 @@ export PATH
 cur_dir=$(pwd)
 
 libsodium_file='libsodium-1.0.18'
-libsodium_url='https://github.com/jedisct1/libsodium/releases/download/1.0.18-RELEASE/libsodium-1.0.18.tar.gz'
+libsodium_url='https://github.com/xD-cRiz/ss-v2r-plgn/blob/main/libsodium-1.0.18.tar.gz'
 
 mbedtls_file='mbedtls-2.16.12'
-mbedtls_url='https://github.com/Mbed-TLS/mbedtls/archive/refs/tags/v2.16.12.tar.gz'
+mbedtls_url='https://github.com/xD-cRiz/ss-v2r-plgn/blob/main/mbedtls-2.16.12.tar.gz'
 
 # Stream Ciphers
 ciphers=(
@@ -124,8 +124,6 @@ print_info(){
     clear
     echo "#############################################################"
     echo "# Install Shadowsocks-libev server for Debian or Ubuntu     #"
-    echo "# Intro:  https://teddysun.com/358.html                     #"
-    echo "# Author: Teddysun <i@teddysun.com>                         #"
     echo "# Github: https://github.com/shadowsocks/shadowsocks-libev  #"
     echo "#############################################################"
     echo
@@ -253,8 +251,8 @@ pre_install(){
 
     # Set shadowsocks-libev config password
     echo "Please input password for shadowsocks-libev:"
-    read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="teddysun.com"
+    read -p "(Default password: criz.romero):" shadowsockspwd
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="criz.romero"
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
@@ -426,7 +424,7 @@ install_shadowsocks(){
         fi
     else
         echo
-        echo -e "[${red}Error${plain}] Shadowsocks-libev install failed. please visit https://teddysun.com/358.html and contact."
+        echo -e "[${red}Error${plain}] Shadowsocks-libev install failed. "
         exit 1
     fi
 
@@ -443,7 +441,7 @@ install_shadowsocks(){
     echo -e "Your Password         : \033[41;37m ${shadowsockspwd} \033[0m"
     echo -e "Your Encryption Method: \033[41;37m ${shadowsockscipher} \033[0m"
     echo
-    echo "Welcome to visit:https://teddysun.com/358.html"
+    echo "Powered By: Criz Romero"
     echo "Enjoy it!"
     echo
 }
